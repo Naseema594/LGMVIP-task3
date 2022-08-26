@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h2><b><i>Let's Grow More Intermediate Level Task-3</i></b></h2>
+        <h1>Registration From</h1>
+        <div class="form-wrapper">
+            <form class="myForm">
+                <div class="form-item">
+                    <label for="fullname"><b>Full Name:</b></label>
+                    <input type="text"  id="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="form-item">
+                    <label for="email"><b>E-mail:</b></label>
+                    <input type="email" name="email" id="email" placeholder="email@xyz.com" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="phonenumber"><b>Tel/Mobile:</b></label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="XXX XXX XXXX" required>
+                </div>
+                
+                <div class="form-item">
+                    <label for="gender"><b>Gender:</b></label>
+                    <div class="genders">
+                        <p><b>Male</b></p> <input type="radio" name="gender" id="gender" value="male">
+                        <p><b>Female</b></p> <input type="radio" name="gender" id="gender" value="female">
+                        <p><b>Other</b></p> <input type="radio" name="gender" id="gender" value="other">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="skills"><b>Skills:</b></label>
+                    <div class="skills">
+                        <p><b>HTML</b></p> <input type="checkbox" name="skill" id="skill" value="HTML">
+                        <p><b>CSS</b></p> <input type="checkbox" name="skill" id="skill" value="CSS">
+                        <p><b>JS</b></p> <input type="checkbox" name="skill" id="skill" value="JS">
+                    </div>
+                </div>               
+
+                <button class="register" id="submit" onclick="onFormSubmit()" type="submit">Register</button>
+                <button class="clear" id="clear" onclick="resetForm()">Clear</button>
+            </form>
+        </div>
+
+    </div>
+    <h2 align="center"><b>Registered Users</b></h2>
+<div class="table-wrapper">
+    <table class="show">
+        <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Gender</th>
+            <th>Skills</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tbody>
+    </table>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
